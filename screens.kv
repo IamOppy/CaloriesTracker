@@ -1,0 +1,45 @@
+<MainScreen>
+    GridLayout:
+        text:'Hello'
+        cols: 2
+        padding:20
+        spacing:50
+        Label:
+            text:'Name'
+        TextInput:
+            id:name
+        Label:
+            text:"Height(CM)"
+        TextInput:
+            id: height_cm
+        Label:
+            text:"Gender"
+        TextInput:
+            id: gender
+        Label:
+            text:"Age"
+        TextInput:
+            id:age
+        Label:
+            text:"Hours Slept"
+        TextInput:
+            id:hours
+        Label:
+            text:"Weight"
+        TextInput:
+            id:weight_kg
+        Button:
+            text:"View Records"
+            on_press:root.open_records()
+        Button:
+            text:"Submit"
+            on_press:root.submit()
+        Label:
+            id:result
+            text:""
+
+
+<RootWidget>
+    MainScreen:
+        id:main_screen
+        name:"main_screen"
